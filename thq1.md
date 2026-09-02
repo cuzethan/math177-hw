@@ -3,7 +3,7 @@
 
 ## Question 1 (Sec2.2: #14)
 
-#### Constants:
+#### Variables:
 - $X_1 = \text{\# of product A}$
 - $X_2 = \text{\# of product B}$
 - $X_3 = \text{\# of product C}$
@@ -13,13 +13,13 @@
 $$\boldsymbol{\min} \; 1.6X_1 + 0.5X_2 + 1.4X_3 \qquad \text{\textbf{(minimize cost at dollars/gal)}}$$
 
 #### Constraints:
-- $X_1, X_2, X_3 \geq 0$ (non-negative)
-- $60X_1 + 18X_2 + 75X_3 \geq 5$ (additives)
-- $10X_1 + 3X_2 \geq 50$ (antifreeze)
+- $X_1, X_2, X_3 \geq 0 \qquad \text{\textbf{(non-negative)}}$
+- $60X_1 + 18X_2 + 75X_3 \geq 5 \qquad \text{\textbf{(additives)}}$
+- $10X_1 + 3X_2 \geq 50 \qquad \text{\textbf{(antifreeze)}}$
 
 ## Question 2 (Sec 2.3: #12)
 
-#### Constants:
+#### Variables:
 - $X_1 = \text{\# of hours per week in process 1}$
 - $X_2 = \text{\# of hours per week in process 2}$
 - $X_3 = \text{\# of hours per week in process 3}$
@@ -29,14 +29,14 @@ $$\boldsymbol{\min} \; 1.6X_1 + 0.5X_2 + 1.4X_3 \qquad \text{\textbf{(minimize c
 $$\boldsymbol{\min} \; 160X_1 + 400X_2 + 300X_3 \qquad \text{\textbf{(minimize cost in dollars)}}$$
 
 #### Constraints:
-- $X_1, X_2, X_3 \geq 0$ (non-negative)
-- $3X_1 + 6X_2 + 6X_3 \geq 36$ (Regular)
-- $4X_1 + 6X_2 + 3X_3 \geq 20$ (Special)
-- $2X_1 + 8X_2 + 4X_3 \geq 30$ (Super)
+- $X_1, X_2, X_3 \geq 0 \qquad \text{\textbf{(non-negative)}}$
+- $3X_1 + 6X_2 + 6X_3 \geq 36 \qquad \text{\textbf{(Regular)}}$
+- $4X_1 + 6X_2 + 3X_3 \geq 20 \qquad \text{\textbf{(Special)}}$
+- $2X_1 + 8X_2 + 4X_3 \geq 30 \qquad \text{\textbf{(Super)}}$
 
 ## Question 3 (Sec 2.4: #3)
 
-#### Constants:
+#### Variables:
 - $X_1 = \text{\# of cases sold from plant 1 to outlet 1}$
 - $X_2 = \text{\# of cases sold from plant 1 to outlet 3}$
 - $X_3 = \text{\# of cases sold from plant 1 to outlet 4}$
@@ -57,19 +57,19 @@ $$- \; 120\big[4000 - (X_1 + X_2 + X_3 + X_4)\big] - 110\big[2000 - (X_5 + X_6 +
 $$\text{\textbf{(minimize transportation cost minus profit from surplus, in cents)}}$$
 
 #### Constraints:
-- $X_1, X_2, \ldots, X_{12} \geq 0$ (non-negative)
-- $X_1 + X_2 + X_3 + X_4 \leq 4000$ (plant 1 weekly production)
-- $X_5 + X_6 + X_7 + X_8 + X_9 \leq 2000$ (plant 2 weekly production)
-- $X_{10} + X_{11} + X_{12} \leq 3000$ (plant 3 weekly production)
-- $X_1 + X_5 + X_{10} \geq 1000$ (outlet 1)
-- $X_6 + X_{11} \geq 1200$ (outlet 2)
-- $X_2 + X_7 \geq 3000$ (outlet 3)
-- $X_3 + X_8 + X_{12} \geq 400$ (outlet 4)
-- $X_4 + X_9 \geq 2200$ (outlet 5)
+- $X_1, X_2, \ldots, X_{12} \geq 0 \qquad \text{\textbf{(non-negative)}}$
+- $X_1 + X_2 + X_3 + X_4 \leq 4000 \qquad \text{\textbf{(plant 1 weekly production)}}$
+- $X_5 + X_6 + X_7 + X_8 + X_9 \leq 2000 \qquad \text{\textbf{(plant 2 weekly production)}}$
+- $X_{10} + X_{11} + X_{12} \leq 3000 \qquad \text{\textbf{(plant 3 weekly production)}}$
+- $X_1 + X_5 + X_{10} \geq 1000 \qquad \text{\textbf{(outlet 1)}}$
+- $X_6 + X_{11} \geq 1200 \qquad \text{\textbf{(outlet 2)}}$
+- $X_2 + X_7 \geq 3000 \qquad \text{\textbf{(outlet 3)}}$
+- $X_3 + X_8 + X_{12} \geq 400 \qquad \text{\textbf{(outlet 4)}}$
+- $X_4 + X_9 \geq 2200 \qquad \text{\textbf{(outlet 5)}}$
 
 ## Question 4 (Sec 2.5: #3)
 
-#### Constants:
+#### Variables:
 For $i = 1, 2, 3$:
 - $C_i = \text{\# of units sold in month } i$
 - $B_i = \text{\# of units bought in month } i$
@@ -82,11 +82,10 @@ $$\text{\textbf{(maximize profit in dollars)}}$$
 $$\text{\textbf{(assume remaining storage is sold at month 3)}}$$
 
 #### Constraints:
-- $S_i, B_i, C_i \geq 0$ for $i = 1, 2, 3$ (non-negative)
-- $S_1 - B_1 + C_1 = 25$ (month 1 inventory balance)
-- $S_2 - S_1 - B_2 + C_2 = 0$ (month 2 inventory balance)
-- $S_3 - S_2 - B_3 + C_3 = 0$ (month 3 inventory balance)
-- $B_i \leq 65$ for $i = 1, 2, 3$ (buying limit)
-- $C_i \leq 100$ for $i = 1, 2, 3$ (selling limit)
-- $S_i \leq 45$ for $i = 1, 2, 3$ (storage limit)
-
+- $S_i, B_i, C_i \geq 0 \text{ for } i = 1, 2, 3 \qquad \text{\textbf{(non-negative)}}$
+- $S_1 - B_1 + C_1 = 25 \qquad \text{\textbf{(month 1 inventory balance)}}$
+- $S_2 - S_1 - B_2 + C_2 = 0 \qquad \text{\textbf{(month 2 inventory balance)}}$
+- $S_3 - S_2 - B_3 + C_3 = 0 \qquad \text{\textbf{(month 3 inventory balance)}}$
+- $B_i \leq 65 \text{ for } i = 1, 2, 3 \qquad \text{\textbf{(buying limit)}}$
+- $C_i \leq 100 \text{ for } i = 1, 2, 3 \qquad \text{\textbf{(selling limit)}}$
+- $S_i \leq 45 \text{ for } i = 1, 2, 3 \qquad \text{\textbf{(storage limit)}}$
