@@ -315,6 +315,3 @@ All RHS $\geq 0$ and all $z$-row entries $\geq 0$, so optimal:
 
 $$(x_1, x_2, x_3, x_4) = \left(0,\ 0,\ \dfrac{2}{3},\ \dfrac{20}{3}\right), \qquad z^* = \dfrac{302}{3}.$$
 
-Checks:
-- New constraint: $3\cdot\dfrac{20}{3} = 20 \leq 20$
-- Objective: $1\cdot\dfrac{2}{3} + 15\cdot\dfrac{20}{3} = \dfrac{302}{3}$
